@@ -1,1 +1,21 @@
 # Breakout_Project
+## 実行環境
+| ソフトウェア・使用機器 | バージョン |
+| -------------------- | ---------- |
+| python        |  3.10.11  |
+
+## 仮想環境コマンドメモ
+```bash
+#仮想環境の作成
+python -m venv venv_breakout 
+#コマンドプロンプトでアクティベート
+venv_breakout\Scripts\activate.bat 
+# VScodeのターミナルでアクティベート
+.\venv_breakout\Scripts\activate 
+# 仮想環境を終了
+deactivate 
+#パッケージ一覧の作成
+python -m pip freeze > requirements.txt 
+#一括ダウンロード
+python -m pip install -r requirements.txt 
+```
