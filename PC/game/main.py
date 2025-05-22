@@ -66,7 +66,8 @@ def main(control_input=None):
 
             if is_missed:
                 lives -= 1
-                send_lives_to_arduino(lives)
+                if control_input is not None:
+                    send_lives_to_arduino(lives)
                 if lives <= 0:
                     print("Game Over")
                     running = False
