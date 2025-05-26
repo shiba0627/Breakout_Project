@@ -10,6 +10,7 @@ from PC.controller.serial_reader import (
 from PC.controller.joystick_mapper import parse_response
 
 def main(control_input=None):
+    print(control_input)
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption("Breakout Game")

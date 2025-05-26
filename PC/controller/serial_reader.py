@@ -105,3 +105,10 @@ def get_input_from_serial():
 
 def is_communication_error():
     return error_flag
+
+if __name__ == "__main__":
+    init_serial()
+    while True:
+        input_data = get_input_from_serial()
+        print(f"Received: {input_data}")
+        time.sleep(1)  # 1秒待機
